@@ -1,8 +1,4 @@
-try:
-    import duckdb
-except ImportError:
-    duckdb = None
-
+import duckdb
 import pandas as pd
 
 current_df = None

@@ -1,13 +1,7 @@
 import os
-from typing import Any, List, Literal, Optional, Union
-
-try:
-    from google import genai
-    from google.genai import types
-except ImportError:
-    genai = None  # type: ignore[assignment]
-    types = None  # type: ignore[assignment]
-
+from typing import List, Literal, Optional, Union
+from google import genai
+from google.genai import types
 from pydantic import BaseModel, Field
 
 api_key = os.getenv("GEMINI_API_KEY")
