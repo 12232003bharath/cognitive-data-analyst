@@ -4,6 +4,7 @@ import DataPreview from "./components/DataPreview";
 import AskBox from "./components/AskBox";
 import ResultTable from "./components/ResultTable";
 import ResultChart from "./components/ResultChart";
+import PdfReportButton from "./components/PdfReportButton";
 import "./App.css";
 
 function App() {
@@ -64,6 +65,9 @@ function App() {
 
         {queryResult && (
           <section className="card section-card">
+            <div className="result-toolbar">
+              <PdfReportButton csvData={csvData} queryResult={queryResult} />
+            </div>
             <ResultTable resultData={queryResult} />
           </section>
         )}

@@ -354,6 +354,31 @@ body {
   box-shadow: none;
 }
 
+.result-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+.report-btn {
+  min-height: 44px;
+  border: none;
+  border-radius: 14px;
+  background: #9370db;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.report-btn:hover {
+  background: #8663cf;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(147, 112, 219, 0.18);
+}
+
 .status-text {
   margin-top: 14px !important;
   color: #9370db !important;
@@ -433,6 +458,14 @@ pre {
     align-self: flex-start;
     width: 54px;
     border-radius: 50%;
+  }
+
+  .result-toolbar {
+    justify-content: stretch;
+  }
+
+  .report-btn {
+    width: 100%;
   }
 }
 
